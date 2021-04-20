@@ -1,5 +1,5 @@
 # zlm构建工具
-支持构建各个操作系统下的zlm包， 当前已支持centos7, 
+支持构建各个操作系统下的zlm包， 当前已支持centos7, ubuntu18, 
 项目依赖docker，请先自行安装docker环境
 
 linux下：
