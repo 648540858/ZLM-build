@@ -1,8 +1,11 @@
-FROM ubuntu:18.04
+FROM centos:7
 
 # ADD cmake-3.20.0-rc2-linux-x86_64.tar.gz /home
 
-RUN apt update && \
-    apt-get install build-essential cmake -y
+RUN yum -y install gcc gcc-c++ git wget make && \
+    cd /home && \
+    wget https://cmake.org/files/v3.20/cmake-3.20.0-rc2-linux-x86_64.tar.gz && \
+    tar xf cmake-3.20.0-rc2-linux-x86_64.tar.gz && \
+    ln -s /home/cmake-3.20.0-rc2-linux-x86_64/bin/cmake /usr/bin/cmake
 
 CMD [ "/bin/bash" ]

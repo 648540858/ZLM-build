@@ -12,6 +12,6 @@ cmake .. -DCMAKE_BUILD_TYPE:STRING=Release
 make -j4
 
 mkdir -p /home/ZLMediaKit/Release
-mv /home/zlm/ZLMediaKit/release/linux/Release/* /home/ZLMediaKit/Release
-cp /home/zlm/ZLMediaKit/conf/config.ini /home/ZLMediaKit/Release
+mv /home/zlm/ZLMediaKit/release/linux/Release/* /home/ZLMediaKit/Release/
+cp /home/zlm/ZLMediaKit/conf/config.ini /home/ZLMediaKit/Release/
 
